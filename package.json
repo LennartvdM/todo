@@ -1,0 +1,23 @@
+{
+  "name": "dewthread",
+  "version": "1.0.0",
+  "description": "Personal work management system using a Neo4j graph database as an event-sourced store.",
+  "main": "index.js",
+  "scripts": {
+    "cypher": "node scripts/run-cypher.js",
+    "setup": "node scripts/run-cypher.js schema/constraints.cypher",
+    "seed": "node scripts/run-cypher.js schema/seed.cypher",
+    "verify": "node scripts/run-cypher.js queries/verify-all.cypher"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:39325/git/LennartvdM/todo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "neo4j-driver": "^6.0.1"
+  }
+}
