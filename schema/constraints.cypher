@@ -1,5 +1,5 @@
-CREATE CONSTRAINT version_naam_unique IF NOT EXISTS
-FOR (v:Version) REQUIRE v.naam IS UNIQUE;
+CREATE CONSTRAINT version_id_unique IF NOT EXISTS
+FOR (v:Version) REQUIRE v.id IS UNIQUE;
 
 CREATE CONSTRAINT domein_naam_unique IF NOT EXISTS
 FOR (d:Domein) REQUIRE d.naam IS UNIQUE;
