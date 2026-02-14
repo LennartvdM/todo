@@ -66,7 +66,8 @@ User: ${userInput}`;
     messages: [{ role: 'user', content: userMessage }],
   });
 
-  const text = response.content[0].type === 'text' ? response.content[0].text : '';
+  let text = response.content[0].type === 'text' ? response.content[0].text : '';
+  text = text.replace(/^```json\s*\n?/, '').replace(/\n?```\s*$/, '');
 
   const parsed = JSON.parse(text);
   return {

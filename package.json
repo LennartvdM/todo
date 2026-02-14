@@ -8,7 +8,8 @@
     "cypher": "node scripts/run-cypher.js",
     "setup": "node scripts/run-cypher.js schema/constraints.cypher",
     "seed": "node scripts/run-cypher.js schema/seed.cypher",
-    "verify": "node scripts/run-cypher.js queries/verify-all.cypher"
+    "verify": "node scripts/run-cypher.js queries/verify-all.cypher",
+    "test-parse": "npx tsx scripts/test-parse.ts"
   },
   "repository": {
     "type": "git",
